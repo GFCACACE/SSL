@@ -1,3 +1,6 @@
 [submodule "SSL-TPTeorico-Grupo-25"]
 	path = SSL-TPTeorico-Grupo-25
 	url = git@github.com:ATrossero/SSL-Grupo-25.git
+[submodule "ssl-tp-automatas-g25"]
+	path = ssl-tp-automatas-g25
+	url = https://github.com/GFCACACE/ssl-tp-automatas-g25.git
