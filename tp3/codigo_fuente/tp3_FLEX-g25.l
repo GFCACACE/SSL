@@ -28,7 +28,7 @@ constEntera {DIGITO}({DIGITO})*
 {constEntera} { yylval.num = atoi(yytext); return CONSTANTE; }
 {IDENTIFICADOR} { yylval.cadena = strdup(yytext); return ID; }
 [ \t\n]        { /* Ignorar espacios en blanco y saltos de línea */ }
-.              { fprintf(stderr, "Carácter inesperado: %s\n", yytext);yyerror("Error lexico"); }
+.              { fprintf(stderr, "Caracter inesperado: %s\n", yytext);yyerror("Error lexico"); }
 %%
 //int main() {
 //    yylex();
