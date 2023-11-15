@@ -20,6 +20,11 @@ constEntera {DIGITO}({DIGITO})*
 "+" { return SUMA; }
 ")" { return PARENDERECHO; }
 "-" { return RESTA; }
+"inicio"            {yylval.reservada = yytext; return (INICIO);}
+"fin"               {yylval.reservada = yytext; return (FIN);}
+"leer"              {yylval.reservada = yytext; return (LEER);}
+"escribir"          {yylval.reservada = yytext; return (ESCRIBIR);}
+
 {constEntera} { yylval.num = atoi(yytext); return CONSTANTE; }
 {IDENTIFICADOR} { yylval.cadena = strdup(yytext); return ID; }
 . ECHO;

@@ -11,14 +11,17 @@ int variable=0;
 %union{
 char* cadena;
 int num;
+char* reservada;
 }
 %token ASIGNACION PYCOMA SUMA RESTA PARENIZQUIERDO PARENDERECHO
 %token <cadena> ID
 %token <num> CONSTANTE
 %type <num> expresion
 %type <num> primaria
-
+%token <reservada> INICIO FIN LEER ESCRIBIR
 %%
+programa: INICIO sentencias FIN
+;
 sentencias: sentencias sentencia
 |sentencia
 ;
