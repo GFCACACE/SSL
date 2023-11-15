@@ -13,7 +13,7 @@ char* cadena;
 int num;
 char* reservada;
 }
-%token ASIGNACION PYCOMA SUMA RESTA PARENIZQUIERDO PARENDERECHO
+%token ASIGNACION PYCOMA SUMA RESTA PARENIZQUIERDO PARENDERECHO 
 %token <cadena> ID
 %token <num> CONSTANTE
 %type <num> expresion
