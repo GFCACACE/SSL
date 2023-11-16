@@ -321,6 +321,7 @@ resultado */
             }
         }
         void Comenzar(void) {
+
 /* Inicializaciones Semanticas */
         }
         void Terminar(void) {
@@ -330,6 +331,9 @@ resultado */
         void Asignar(REG_EXPRESION izq, REG_EXPRESION der){
 /* Genera la instruccion para la asignacion */
             Generar("Almacena", Extraer(&der), izq.nombre, "");
+        }
+        void EsEntera(){
+            
         }
 /**************************Scanner************************************/
         TOKEN scanner()
